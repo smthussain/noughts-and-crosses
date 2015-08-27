@@ -4,7 +4,7 @@ A simple console app that shows a computer playing itself. There is no strategy 
 
 Feature Specification
 ---------------------
-* playa game of tic-tac-toe between two computer players
+* play a game of tic-tac-toe between two computer players
 * display the game board at the start of the game and ensure it is updated after everymove
 * prompt the user to begin the game
 * make random moves by each player
