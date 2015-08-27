@@ -20,10 +20,10 @@ Design Consideration
 
 Architecture
 ------------
-* Target framework is .NET 4.5. Solution was developed in VS2012 + Resharper
+* Target framework is .NET 4.5. Solution was developed in VS2012 + Resharper. There are a few nuget packages that need to be restored.
 * We have a UI, that has an outer loop (to replay games) and an inner loop (taking turns within a game)
 * All the complex logic has been pushed into a logic assembly
-* The only entry point to this logic is the public IBoard. The is implemented by Board, which in turn farms out various bits of logic to other components
+* The only entry point to this logic is the public IBoard. The is implemented by Board, which in turn farms out various bits of logic to other components. All these components are Internal
 * All dependancies to the logic are via contracts (DIP), and are resolved with an IoC container (Autofac)
 
 Testing
