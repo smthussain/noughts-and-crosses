@@ -5,7 +5,7 @@ A simple console app that shows a computer playing itself. There is no strategy 
 Feature Specification
 ---------------------
 * play a game of tic-tac-toe between two computer players
-* display the game board at the start of the game and ensure it is updated after everymove
+* display the game board at the start of the game and ensure it is updated after every move
 * prompt the user to begin the game
 * make random moves by each player
 * pause for one second before updating the game board between moves
@@ -29,7 +29,7 @@ Architecture
 Testing
 -------
 * Tests come in their own assembly. They are all unit (not integration) tests, using MSTest, Moq and Autofac.
-* All logic components have their own set of tests (expect IBoardCells, which is just simple encapsulation of a basic collecion of enums) - hopefully the long test names are self-explanatory
+* All logic components have their own set of tests (expect IBoardCells, which is just a simple encapsulation of a basic collection of enums) - hopefully the long test names are self-explanatory
 * There is no UI testing - the UI logic is reduced to just loops, informational messages and pauses - nothing easily testable there
 
 
